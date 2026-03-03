@@ -30,6 +30,56 @@ Navigate an autonomous robot (NXP MR-B3RB) through a simulated warehouse to:
 
 ---
 
+## 📽️ Final Overview – Multi-Environment Validation
+
+This project demonstrates a fully autonomous warehouse robot system evaluated across **three different Gazebo world configurations**.
+
+Although the core architecture remains the same, each environment introduces variations in layout, obstacle density, and navigation complexity to test system robustness.
+
+### 🔹 Environment 1 – Baseline Deployment
+[![Environment 1 Demo](https://img.youtube.com/vi/IgXwKIQvcNU/maxresdefault.jpg)](https://youtu.be/IgXwKIQvcNU)
+
+The robot performs SLAM mapping and autonomous navigation in a standard warehouse layout.  
+This environment validates the core functionality of the Nav2 stack and path planning pipeline.
+
+**[▶️ Watch Environment 1 Demo](https://youtu.be/IgXwKIQvcNU)**
+
+---
+
+### � Environment 2 – Layout Variation
+[![Environment 2 Demo](https://img.youtube.com/vi/nbKGHeC5JjA/maxresdefault.jpg)](https://youtu.be/nbKGHeC5JjA)
+
+The warehouse configuration is modified to introduce tighter passages and altered shelf positions.  
+This environment evaluates adaptability and real-time obstacle avoidance performance.
+
+**[▶️ Watch Environment 2 Demo](https://youtu.be/nbKGHeC5JjA)**
+
+---
+
+### 🔹 Environment 3 – Robustness Validation
+[![Environment 3 Demo](https://img.youtube.com/vi/IPeLoa-Vzlg/maxresdefault.jpg)](https://youtu.be/IPeLoa-Vzlg)
+
+A more complex warehouse layout is used to test navigation stability under increased structural constraints.  
+This environment validates system reliability across diverse spatial conditions.
+
+**[▶️ Watch Environment 3 Demo](https://youtu.be/IPeLoa-Vzlg)**
+
+---
+
+### 🎯 Key Outcome
+
+Across all three environments, the robot successfully:
+
+✅ Generated maps using SLAM  
+✅ Planned optimal paths using Nav2  
+✅ Avoided static obstacles  
+✅ Maintained consistent TF transformations  
+✅ Executed autonomous goal-based navigation
+
+> **This multi-environment evaluation demonstrates the scalability and robustness of the ROS2-based autonomous warehouse system.**
+
+---
+
 ## 🏗️ System Architecture
 
 ```
